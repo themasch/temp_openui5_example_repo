@@ -1,0 +1,6 @@
+<mvc:View xmlns="sap.m"
+          xmlns:mvc="sap.ui.mvc.mvc">
+    <Page showHeader="false" showNavButton="false" enableScrolling="true">
+
+    </Page>
+</mvc:View>

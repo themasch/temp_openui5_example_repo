@@ -1,0 +1,26 @@
+<mvc:View controllerName="example.view.Index"
+          xmlns="sap.m"
+           xmlns:mvc="sap.ui.core.mvc" >
+    <Page id="shopPage" enableScrolling="false" showNavButton="true">
+        <headerContent>
+            <Button icon="sap-icon://cart" type="Reject"/>
+        </headerContent>
+        <content>
+            <SplitContainer id="shopNav" mode="HideMode">
+                <masterPages>
+                    <Page showHeader="true">
+                        <content>
+                            <List mode="SingleSelectMaster" itemPress="navigate">
+                                <items>
+                                    <StandardListItem type="Active" id="nav-dashboard" selected="true" title="Dashboard" icon="sap-icon://fa/tachometer" />
+                                    <StandardListItem type="Active" id="nav-shop" title="Shop" icon="sap-icon://fa/search" />
+                                    <StandardListItem type="Active" id="nav-cart" title="Warenkorb" icon="sap-icon://cart" />
+                                </items>
+                            </List>
+                        </content>
+                    </Page>
+                </masterPages>
+            </SplitContainer>
+        </content>
+    </Page>
+</mvc:View>
